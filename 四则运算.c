@@ -9,16 +9,16 @@
 int right = 0;
 int wrong = 0;
 
-void add();/*¼Ó·¨ÔËËã*/
-void addf();/*Õæ·ÖÊı¼Ó·¨ÔËËã*/
-void minu();/*¼õ·¨ÔËËã*/
-void minuf();/*Õæ·ÖÊı¼õ·¨ÔËËã*/
-void mul();/*³Ë·¨ÔËËã*/
-void mulf();/*Õæ·ÖÊı³Ë·¨ÔËËã*/
-void di();/*³ı·¨ÔËËã*/
-void dif();/*Õæ·ÖÊı³ı·¨ÔËËã*/
-int common(int x, int y); /*Çóx,yµÄ×î´ó¹«Ô¼Êı*/
-int lag();/*ÓïÑÔÑ¡Ôñº¯Êı*/
+void add();/*åŠ æ³•è¿ç®—*/
+void addf();/*çœŸåˆ†æ•°åŠ æ³•è¿ç®—*/
+void minu();/*å‡æ³•è¿ç®—*/
+void minuf();/*çœŸåˆ†æ•°å‡æ³•è¿ç®—*/
+void mul();/*ä¹˜æ³•è¿ç®—*/
+void mulf();/*çœŸåˆ†æ•°ä¹˜æ³•è¿ç®—*/
+void di();/*é™¤æ³•è¿ç®—*/
+void dif();/*çœŸåˆ†æ•°é™¤æ³•è¿ç®—*/
+int common(int x, int y); /*æ±‚x,yçš„æœ€å¤§å…¬çº¦æ•°*/
+int lag();/*è¯­è¨€é€‰æ‹©å‡½æ•°*/
 int tag_fac();
 
 int ag;
@@ -36,7 +36,7 @@ void main()
 	tf = tag_fac();
 	if (ag)
 	{
-		std::cout << "\n" << "\t" << "\t" << "\t" << "Ğ¡Ñ§¼òÒ×ËÄÔòÔËËã" << "\n" << "\n";
+		std::cout << "\n" << "\t" << "\t" << "\t" << "å°å­¦ç®€æ˜“å››åˆ™è¿ç®—" << "\n" << "\n";
 	}
 	else
 	{
@@ -47,16 +47,16 @@ void main()
 	{
 		if (ag)
 		{
-            std::cout<<"ÇëÑ¡Ôñ£º"<<"\n";
-			std::cout << "\t" << "\t" << "\t" << "¼Ó·¨ÔËËã£¨ÇëÊäÈë1)" << "\n";
-			std::cout << "\t" << "\t" << "\t" << "¼õ·¨ÔËËã£¨ÇëÊäÈë2)" << "\n";
-			std::cout << "\t" << "\t" << "\t" << "³Ë·¨ÔËËã£¨ÇëÊäÈë3)" << "\n";
-			std::cout << "\t" << "\t" << "\t" << "³ı·¨ÔËËã£¨ÇëÊäÈë4)" << "\n";
-			std::cout << "\t" << "\t" << "\t" << "ÍË³öÔËËã£¨ÇëÊäÈë5)" << "\n";
+            std::cout<<"è¯·é€‰æ‹©ï¼š"<<"\n";
+			std::cout << "\t" << "\t" << "\t" << "åŠ æ³•è¿ç®—ï¼ˆè¯·è¾“å…¥1)" << "\n";
+			std::cout << "\t" << "\t" << "\t" << "å‡æ³•è¿ç®—ï¼ˆè¯·è¾“å…¥2)" << "\n";
+			std::cout << "\t" << "\t" << "\t" << "ä¹˜æ³•è¿ç®—ï¼ˆè¯·è¾“å…¥3)" << "\n";
+			std::cout << "\t" << "\t" << "\t" << "é™¤æ³•è¿ç®—ï¼ˆè¯·è¾“å…¥4)" << "\n";
+			std::cout << "\t" << "\t" << "\t" << "é€€å‡ºè¿ç®—ï¼ˆè¯·è¾“å…¥5)" << "\n";
 		}
 		else
 		{
-			std::cout << "Please select £º" << "\n";
+			std::cout << "Please select ï¼š" << "\n";
 			std::cout << "\t" << "\t" << "\t" << "Addition operation (enter 1)" << "\n";
 			std::cout << "\t" << "\t" << "\t" << "Aubtraction operation (enter 2)"<< "\n";
 			std::cout << "\t" << "\t" << "\t" << "Multiply operation (enter 3)"<< "\n";
@@ -109,15 +109,15 @@ void main()
 		}
 		if (ag)
 		{
-			std::cout << "\n" << "\t" << "\t" << "\t" << "¼ÌĞøÔËËã£¿£¨ÇëÊäÈë1£©" << "\n";
-			std::cout << "\n" << "\t" << "\t" << "\t" << "ÖØĞÂÔËËã£¿£¨ÇëÊäÈë2£©" << "\n";
-			std::cout << "\n" << "\t" << "\t" << "\t" << "ÍË³öÔËËã£¿£¨ÇëÊäÈë3£©" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "ç»§ç»­è¿ç®—ï¼Ÿï¼ˆè¯·è¾“å…¥1ï¼‰" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "é‡æ–°è¿ç®—ï¼Ÿï¼ˆè¯·è¾“å…¥2ï¼‰" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "é€€å‡ºè¿ç®—ï¼Ÿï¼ˆè¯·è¾“å…¥3ï¼‰" << "\n";
 		}
 		else
 		{
-			std::cout << "\n" << "\t" << "\t" << "\t" << "Continue operation £¿£¨enter 1£©" << "\n";
-			std::cout << "\n" << "\t" << "\t" << "\t" << "Again operation£¿£¨enter 2£©" << "\n";
-			std::cout << "\n" << "\t" << "\t" << "\t" << "Withdraw from£¿£¨enter 3£©" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "Continue operation ï¼Ÿï¼ˆenter 1ï¼‰" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "Again operationï¼Ÿï¼ˆenter 2ï¼‰" << "\n";
+			std::cout << "\n" << "\t" << "\t" << "\t" << "Withdraw fromï¼Ÿï¼ˆenter 3ï¼‰" << "\n";
 		}
 		std::cin >> con;
 		if (con == 1)
@@ -129,7 +129,7 @@ void main()
 		else
 		if (ag)
 		{
-            std::cout<<"±§Ç¸!ÄãÊäÈëµÄÖ¸ÁîÓĞÎó!ÇëÖØĞÂÊäÈë!"<<"\n";
+            std::cout<<"æŠ±æ­‰!ä½ è¾“å…¥çš„æŒ‡ä»¤æœ‰è¯¯!è¯·é‡æ–°è¾“å…¥!"<<"\n";
 		}
 		else
 		{
@@ -138,7 +138,7 @@ void main()
 	}
 	if (ag)
 	{
-		std::cout << "Äú×Ü¹²Íê³ÉÁË" << right + wrong << "µÀÌâ" << "\n" << "ÕıÈ·" << right << "µÀ" << "\n" << "´íÎó" << wrong << "µÀ" << "\n";
+		std::cout << "æ‚¨æ€»å…±å®Œæˆäº†" << right + wrong << "é“é¢˜" << "\n" << "æ­£ç¡®" << right << "é“" << "\n" << "é”™è¯¯" << wrong << "é“" << "\n";
 	}
 	else
 	{
@@ -146,7 +146,7 @@ void main()
 	}
 }
 
-void add()/*¼Ó·¨ÔËËã*/
+void add()/*åŠ æ³•è¿ç®—*/
 {
 	int a, b, c;
 	srand((unsigned)time(NULL));
@@ -154,18 +154,18 @@ void add()/*¼Ó·¨ÔËËã*/
 	b = rand() % 100;
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a << "+" <<b <<"= ";
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a << "+" <<b <<"= ";
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a << "+ "<<b<<" = ";
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a << "+ "<<b<<" = ";
 	}
 	std::cin>>c;
 	if (a + b == c)
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -177,7 +177,7 @@ void add()/*¼Ó·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -187,20 +187,20 @@ void add()/*¼Ó·¨ÔËËã*/
 	}
 }
 
-void addf()/*·ÖÊı¼Ó·¨ÔËËã*/
+void addf()/*åˆ†æ•°åŠ æ³•è¿ç®—*/
 {
 	int a1, a2, b1, b2, x, y, j, k;
 	srand((unsigned)time(NULL));
 	a1 = rand() % 100;
 	do{
 		a2 = (rand() % 99) + 1;
-	}while (a1 < a2);
+	}while (a1 > a2);
 	a1 = a1 / common(a1, a2);
 	a2 = a2 / common(a1, a2);
 	b1 = rand() % 100;
 	do{
 		b2 = (rand() % 99) + 1;
-	} while (b1 < b2);
+	} while (b1 > b2);
 	b1 = b1 / common(b1, b2);
 	b2 = b2 / common(b1, b2);
     x = a1*b2 + a2*b1;
@@ -211,19 +211,19 @@ void addf()/*·ÖÊı¼Ó·¨ÔËËã*/
 	
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a1<< "/"<< a2 << "+" << b1<<"/" <<b2<< "= "<<std::endl;
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a1<< "/"<< a2 << "+" << b1<<"/" <<b2<< "= "<<std::endl;
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "+" << b1 << "/" << b2 << "= "<<std::endl;
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "+" << b1 << "/" << b2 << "= "<<std::endl;
 	}
 	if (ag)
 	{
-        std::cout << "ÇëÊäÈë·Ö×Ó:";
+        std::cout << "è¯·è¾“å…¥åˆ†å­:";
 	    std::cin >>j;
-	    std::cout << "ÇëÊäÈë·ÖÄ¸:";
+	    std::cout << "è¯·è¾“å…¥åˆ†æ¯:";
 	    std::cin >> k;
-	    std::cout << "ÄãµÄ´ğ°¸Îª:" << j << "/" << k<<std::endl;
+	    std::cout << "ä½ çš„ç­”æ¡ˆä¸º:" << j << "/" << k<<std::endl;
 	}
 	else
 	{
@@ -238,7 +238,7 @@ void addf()/*·ÖÊı¼Ó·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -250,7 +250,7 @@ void addf()/*·ÖÊı¼Ó·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -259,7 +259,7 @@ void addf()/*·ÖÊı¼Ó·¨ÔËËã*/
 		wrong++;
 	}
 }
-void minu()/*¼õ·¨ÔËËã*/
+void minu()/*å‡æ³•è¿ç®—*/
 {
 	int a, b, c;
 	srand((unsigned)time(NULL));
@@ -267,18 +267,18 @@ void minu()/*¼õ·¨ÔËËã*/
 	b = rand() % 100;
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a << "-" << b << "= ";
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a << "-" << b << "= ";
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a << "- " << b << " = ";
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a << "- " << b << " = ";
 	}
 	std::cin>>c;
 	if (a - b == c)
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -290,7 +290,7 @@ void minu()/*¼õ·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -301,20 +301,20 @@ void minu()/*¼õ·¨ÔËËã*/
 	}
 }
 
-void minuf()/*·ÖÊı¼õ·¨ÔËËã*/
+void minuf()/*åˆ†æ•°å‡æ³•è¿ç®—*/
 {
 	int a1, a2, b1, b2, x, y, j, k;
 	srand((unsigned)time(NULL));
 	a1 = rand() % 100;
 	do{
 		a2 = (rand() % 99) + 1;
-	} while (a1 < a2);
+	} while (a1 > a2);
 	a1 = a1 / common(a1, a2);
 	a2 = a2 / common(a1, a2);
 	b1 = rand() % 100;
 	do{
 		b2 = (rand() % 99) + 1;
-	} while (b1 < b2);
+	} while (b1 > b2);
 	b1 = b1 / common(b1, b2);
 	b2 = b2 / common(b1, b2);
 	x = a1*b2 - a2*b1;
@@ -325,19 +325,19 @@ void minuf()/*·ÖÊı¼õ·¨ÔËËã*/
 
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "-" << b1 << "/" << b2 << "= " << std::endl;
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "-" << b1 << "/" << b2 << "= " << std::endl;
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "-" << b1 << "/" << b2 << "= " << std::endl;
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "-" << b1 << "/" << b2 << "= " << std::endl;
 	}
 	if (ag)
 	{
-		std::cout << "ÇëÊäÈë·Ö×Ó:";
+		std::cout << "è¯·è¾“å…¥åˆ†å­:";
 		std::cin >> j;
-		std::cout << "ÇëÊäÈë·ÖÄ¸:";
+		std::cout << "è¯·è¾“å…¥åˆ†æ¯:";
 		std::cin >> k;
-		std::cout << "ÄãµÄ´ğ°¸Îª:" << j << "/" << k << std::endl;
+		std::cout << "ä½ çš„ç­”æ¡ˆä¸º:" << j << "/" << k << std::endl;
 	}
 	else
 	{
@@ -352,7 +352,7 @@ void minuf()/*·ÖÊı¼õ·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -364,7 +364,7 @@ void minuf()/*·ÖÊı¼õ·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -375,7 +375,7 @@ void minuf()/*·ÖÊı¼õ·¨ÔËËã*/
 }
 
 
-void mul()/*³Ë·¨ÔËËã*/
+void mul()/*ä¹˜æ³•è¿ç®—*/
 {
 	int a, b, c;
 	srand((unsigned)time(NULL));
@@ -383,18 +383,18 @@ void mul()/*³Ë·¨ÔËËã*/
 	b = rand() % 100;
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a << "*" << b << "= ";
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a << "*" << b << "= ";
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a << "*" << b << " = ";
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a << "*" << b << " = ";
 	}
 	std::cin>>c;
 	if (a*b == c)
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -406,7 +406,7 @@ void mul()/*³Ë·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -415,20 +415,20 @@ void mul()/*³Ë·¨ÔËËã*/
 		wrong++;
 	}
 }
-void mulf()/*·ÖÊı³Ë·¨ÔËËã*/
+void mulf()/*åˆ†æ•°ä¹˜æ³•è¿ç®—*/
 {
 	int a1, a2, b1, b2, x, y, j, k;
 	srand((unsigned)time(NULL));
 	a1 = rand() % 100;
 	do{
 		a2 = (rand() % 99) + 1;
-	} while (a1 < a2);
+	} while (a1 > a2);
 	a1 = a1 / common(a1, a2);
 	a2 = a2 / common(a1, a2);
 	b1 = rand() % 100;
 	do{
 		b2 = (rand() % 99) + 1;
-	} while (b1 < b2);
+	} while (b1 > b2);
 	b1 = b1 / common(b1, b2);
 	b2 = b2 / common(b1, b2);
 	x = a1*b1;
@@ -439,19 +439,19 @@ void mulf()/*·ÖÊı³Ë·¨ÔËËã*/
 
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "*" << b1 << "/" << b2 << "= " << std::endl;
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "*" << b1 << "/" << b2 << "= " << std::endl;
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "*" << b1 << "/" << b2 << "= " << std::endl;
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a1 << "/" << a2 << "*" << b1 << "/" << b2 << "= " << std::endl;
 	}
 	if (ag)
 	{
-		std::cout << "ÇëÊäÈë·Ö×Ó:";
+		std::cout << "è¯·è¾“å…¥åˆ†å­:";
 		std::cin >> j;
-		std::cout << "ÇëÊäÈë·ÖÄ¸:";
+		std::cout << "è¯·è¾“å…¥åˆ†æ¯:";
 		std::cin >> k;
-		std::cout << "ÄãµÄ´ğ°¸Îª:" << j << "/" << k << std::endl;
+		std::cout << "ä½ çš„ç­”æ¡ˆä¸º:" << j << "/" << k << std::endl;
 	}
 	else
 	{
@@ -466,7 +466,7 @@ void mulf()/*·ÖÊı³Ë·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -478,7 +478,7 @@ void mulf()/*·ÖÊı³Ë·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -488,26 +488,26 @@ void mulf()/*·ÖÊı³Ë·¨ÔËËã*/
 	}
 }
 
-void di()/*³ı·¨ÔËËã*/
+void di()/*é™¤æ³•è¿ç®—*/
 {
 	int a, b, c;
 	srand((unsigned)time(NULL));
 	a = rand() % 100;
-	b = rand() % 99+1;/*²»ÄÜ³öÏÖµÈÓÚ0µÄÇé¿ö*/
+	b = rand() % 99+1;/*ä¸èƒ½å‡ºç°ç­‰äº0çš„æƒ…å†µ*/
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << a << "/" << b << "= ";
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << a << "/" << b << "= ";
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << a << "/" << b << " = ";
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << a << "/" << b << " = ";
 	}
 	std::cin >> c;
 	if (a / b == c)
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -519,7 +519,7 @@ void di()/*³ı·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -529,20 +529,20 @@ void di()/*³ı·¨ÔËËã*/
 	}
 }
 
-void dif()/*·ÖÊı³ı·¨ÔËËã*/
+void dif()/*åˆ†æ•°é™¤æ³•è¿ç®—*/
 {
 	int a1, a2, b1, b2, x, y,j,k;
 	srand((unsigned)time(NULL));
 	a1 = rand() % 100;
 	do{
 		a2 = (rand() % 99) + 1;
-	} while (a1 < a2);
+	} while (a1 > a2);
 	a1 = a1 / common(a1, a2);
 	a2 = a2 / common(a1, a2);
 	b1 = rand() % 100;
 	do{
 		b2 = (rand() % 99) + 1;
-	} while (b1 < b2);
+	} while (b1 > b2);
 	b1 = b1 / common(b1, b2);
 	b2 = b2 / common(b1, b2);
 	x = a1*b2 ;
@@ -553,19 +553,19 @@ void dif()/*·ÖÊı³ı·¨ÔËËã*/
 
 	if (ag)
 	{
-		std::cout << "Çë»Ø´ğ£º" << "\n" << "\t" << "\t" << "("<<a1 << "/" << a2 <<")"<<" / " <<"("<< b1 << "/" << b2 <<")"<< "= " << std::endl;
+		std::cout << "è¯·å›ç­”ï¼š" << "\n" << "\t" << "\t" << "("<<a1 << "/" << a2 <<")"<<" / " <<"("<< b1 << "/" << b2 <<")"<< "= " << std::endl;
 	}
 	else
 	{
-		std::cout << " Please answer£º" << "\n" << "\t" << "\t" << "(" << a1 << "/" << a2 << ")" << " / " << "(" << b1 << "/" << b2 << ")" << "= " << std::endl;
+		std::cout << " Please answerï¼š" << "\n" << "\t" << "\t" << "(" << a1 << "/" << a2 << ")" << " / " << "(" << b1 << "/" << b2 << ")" << "= " << std::endl;
 	}
 	if (ag)
 	{
-		std::cout << "ÇëÊäÈë·Ö×Ó:";
+		std::cout << "è¯·è¾“å…¥åˆ†å­:";
 		std::cin >> j;
-		std::cout << "ÇëÊäÈë·ÖÄ¸:";
+		std::cout << "è¯·è¾“å…¥åˆ†æ¯:";
 		std::cin >> k;
-		std::cout << "ÄãµÄ´ğ°¸Îª:" << j << "/" << k << std::endl;
+		std::cout << "ä½ çš„ç­”æ¡ˆä¸º:" << j << "/" << k << std::endl;
 	}
 	else
 	{
@@ -580,7 +580,7 @@ void dif()/*·ÖÊı³ı·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğÕıÈ·!" << "\n";
+			std::cout << "å›ç­”æ­£ç¡®!" << "\n";
 		}
 		else
 		{
@@ -592,7 +592,7 @@ void dif()/*·ÖÊı³ı·¨ÔËËã*/
 	{
 		if (ag)
 		{
-			std::cout << "»Ø´ğ´íÎó!" << "\n";
+			std::cout << "å›ç­”é”™è¯¯!" << "\n";
 		}
 		else
 		{
@@ -602,7 +602,7 @@ void dif()/*·ÖÊı³ı·¨ÔËËã*/
 	}
 }
 
-int common(int x, int y) /*Çóx,yµÄ×î´ó¹«Ô¼Êı*/
+int common(int x, int y) /*æ±‚x,yçš„æœ€å¤§å…¬çº¦æ•°*/
 {
 	int r;
 	while (y >0)
@@ -613,23 +613,23 @@ int common(int x, int y) /*Çóx,yµÄ×î´ó¹«Ô¼Êı*/
 	}
 	return x;
 }
-int lag()/*ÓïÑÔÑ¡Ôñ*/
+int lag()/*è¯­è¨€é€‰æ‹©*/
 {
 	int ag = 0;
-	std::cout << "\t" << "ÇëÑ¡ÔñÓïÑÔ(Please select language):1.ÖĞÎÄ(Chinese ) 0.Ó¢ÎÄ(English)" << std::endl;
+	std::cout << "\t" << "è¯·é€‰æ‹©è¯­è¨€(Please select language):1.ä¸­æ–‡(Chinese ) 0.è‹±æ–‡(English)" << std::endl;
 	std::cin >> ag;
 	return ag;
 }
-int tag_fac()/*ÕûÊı·ÖÊıÑ¡Ôñ*/
+int tag_fac()/*æ•´æ•°åˆ†æ•°é€‰æ‹©*/
 {
 	int tf = 0;
 	if (ag)
 	{
-		std::cout << "\t" << "ÇëÑ¡ÔñÕûÊıÔËËã»¹ÊÇ·ÖÊıÔËËã£º1.ÕûÊı  0.Õæ·ÖÊı" << std::endl;
+		std::cout << "\t" << "è¯·é€‰æ‹©æ•´æ•°è¿ç®—è¿˜æ˜¯åˆ†æ•°è¿ç®—ï¼š1.æ•´æ•°  0.çœŸåˆ†æ•°" << std::endl;
 	}
 	else
 	{
-		std::cout << "\t" << "Select integer or fractional operation£º1.integer  0.fraction" << std::endl;
+		std::cout << "\t" << "Select integer or fractional operationï¼š1.integer  0.fraction" << std::endl;
 	}
 	std::cin >>tf;
 	return tf;
